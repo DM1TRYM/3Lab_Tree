@@ -1,0 +1,10 @@
+load_prf / + a b + - c d e
+eval a=1,b=11,c=3,d=4,e=7
+load_prf / + 1 2 + - 3 4 1
+save_prf
+save_pst
+load_pst 1 2 + 3 4 - 1 + /
+parse (a+11)/(3-4+7)
+eval a=1
+parse 12@5
+eval
